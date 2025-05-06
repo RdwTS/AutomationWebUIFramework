@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group = 'org.example'
+group = 'org.ridwan'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -10,10 +10,49 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation("io.github.bonigarcia:webdrivermanager:6.1.0") {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
+    implementation("org.seleniumhq.selenium:selenium-java:4.31.0") {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
+
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation platform('org.junit:junit-bom:5.10.0')
+    implementation 'org.junit.jupiter:junit-jupiter'
+    implementation("io.cucumber:cucumber-junit:7.10.0")
+    implementation("io.cucumber:cucumber-java:7.10.0")
+
+
 }
 
-test {
-    useJUnitPlatform()
+//test {
+//    useJUnit()
+////    useJUnitPlatform()
+//}
+
+configurations{
+    cucumberRuntime{
+        extendsFrom testImplementation
+    }
+}
+
+def tags = (findProperty('tags')==null ) ? 'not @exclude' : findProperty('tags') + ' and not @exclude'
+
+task cucumber (){
+    description("Running Cucumber Test")
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin','html:reports/test-report.html',
+                    '--plugin','pretty',
+                    '--glue','org.ridwan',
+                    '--tags',"${tags}",
+                    'src/test/resources'
+            ]
+        }
+    }
 }

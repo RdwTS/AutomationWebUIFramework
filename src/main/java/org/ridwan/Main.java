@@ -1,4 +1,4 @@
-package org.example;
+package org.ridwan;
 
 public class Main {
     public static void main(String[] args) {
