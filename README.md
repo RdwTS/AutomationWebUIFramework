@@ -25,11 +25,11 @@ Repositori ini dibuat untuk menerapkan kerangka kerja pengujian UI Web otomatis 
    git clone https://github.com/RdwTS/AutomationWebUIFramework.git
    cd AutomationWebUIFramework
 
-3. **Jalankan pengujian dengan Gradle:**
-  ./gradlew clean test
+3. **Jalankan pengujian dengan Gradle:
+  ./gradlew clean test**
   
-4. **Jalankan pengujian cucumber Tags:**
-  ./gradlew cucumber -Ptags="" atau  gradle cucumber -Ptags=""
+4. **Jalankan pengujian cucumber Tags:
+  ./gradlew cucumber -Ptags="" atau  gradle cucumber -Ptags=""**
 
-5. **Jalankan pengujian cucumber**
-   run file CucumberTest
+5. **Jalankan pengujian cucumber
+   run file CucumberTest**
