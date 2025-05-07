@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="544df0e4-375a-42b6-985a-850da897f637" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/accessCart.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/before_cart_validation_1746524244491.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/CucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/CucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/page/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/CheckoutCartStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/CheckoutCartStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/checkout.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +20,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -44,17 +34,6 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -64,12 +43,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1746524907" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1746599638" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1746524906" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1746599637" />
                   </RecentBranch>
                 </list>
               </option>
@@ -93,57 +72,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cucumber Java.Feature: Login.executor": "Run",
-    "Cucumber Java.Feature: accessCart.executor": "Run",
-    "Cucumber Java.Feature: addCart.executor": "Run",
-    "Cucumber Java.Feature: addChart.executor": "Run",
-    "Cucumber Java.Feature: checkout.executor": "Run",
-    "Cucumber Java.Scenario: Add Backpack to cart.executor": "Run",
-    "Cucumber Java.Scenario: User can access the cart page (1).executor": "Run",
-    "Cucumber Java.Scenario: User can access the cart page.executor": "Run",
-    "Cucumber Java.Scenario: User fills firstname blank in checkout information.executor": "Run",
-    "Cucumber Java.Scenario: User proceeds to checkout.executor": "Run",
-    "Gradle.AutomationWebUIFramework [cucumber].executor": "Run",
-    "Gradle.AutomationWebUIFramework [dependencies].executor": "Run",
-    "Gradle.AutomationWebUIFramework [test].executor": "Run",
-    "Gradle.Build AutomationWebUIFramework.executor": "Run",
-    "JUnit.CucumberTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ridwan/Learn/QA/project/AutomationWebUIFramework/src/main/java/org/ridwan/stepdef"
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Ridwan\Learn\QA\project\AutomationWebUIFramework\src\main\java\org\ridwan\stepdef" />
-      <recent name="D:\Ridwan\Learn\QA\project\AutomationWebUIFramework\src\main\java\org\ridwan" />
-      <recent name="D:\Ridwan\Learn\QA\project\AutomationWebUIFramework\src\main\java\org\ridwan\page" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.CucumberTest">
-    <configuration name="Feature: accessCart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/accessCart.feature" />
-      <option name="GLUE" value="org.ridwan.stepdef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="AutomationWebUIFramework.main" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: accessCart" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Feature: checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
@@ -163,68 +98,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User fills firstname blank in checkout information" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
-      <option name="GLUE" value="org.ridwan.stepdef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="AutomationWebUIFramework.main" />
-      <option name="NAME_FILTER" value="^User fills firstname blank in checkout information$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User fills firstname blank in checkout information$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User fills firstname blank in checkout information" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User proceeds to checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
-      <option name="GLUE" value="org.ridwan.stepdef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="AutomationWebUIFramework.main" />
-      <option name="NAME_FILTER" value="^User proceeds to checkout$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User proceeds to checkout$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User proceeds to checkout" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AutomationWebUIFramework.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.ridwan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.ridwan" />
-      <option name="MAIN_CLASS_NAME" value="org.ridwan.CucumberTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CucumberTest" />
         <item itemvalue="Cucumber Java.Feature: checkout" />
-        <item itemvalue="Cucumber Java.Scenario: User fills firstname blank in checkout information" />
-        <item itemvalue="Cucumber Java.Scenario: User proceeds to checkout" />
-        <item itemvalue="Cucumber Java.Feature: accessCart" />
       </list>
     </recent_temporary>
   </component>
@@ -238,29 +114,5 @@
       <updated>1746495247243</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/CheckoutCartStep.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/CheckoutCartStep.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/CheckoutCartStep.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

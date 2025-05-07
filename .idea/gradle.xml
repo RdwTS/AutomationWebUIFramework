@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="GradleMigrationSettings" migrationVersion="1" />
+=======
+>>>>>>> 06247d215dd9647fc7e596631c3b063a586d14de
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
         <option name="gradleHome" value="C:/Gradle/gradle-6.1.1" />
+=======
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../App install/gradle-8.13" />
+>>>>>>> 06247d215dd9647fc7e596631c3b063a586d14de
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
