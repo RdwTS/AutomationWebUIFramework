@@ -34,20 +34,18 @@ public class CheckoutCartStep extends BaseTest {
     @Given("user is on the cart page")
     @Then("user should be on the cart page")
     public void userOpenTheCartPage() {
-
         System.out.println("Current URL before validating Cart Page: " + driver.getCurrentUrl());
 
-        // Tambahkan ini untuk mengambil screenshot
-        try {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File source = ts.getScreenshotAs(OutputType.FILE);
-            // Simpan file screenshot ke lokasi yang mudah diakses
-            File destination = new File("screenshots/before_cart_validation_" + System.currentTimeMillis() + ".png");
-            org.apache.commons.io.FileUtils.copyFile(source, destination);
-            System.out.println("Screenshot taken: " + destination.getAbsolutePath());
-        } catch (Exception e) {
-            System.out.println("Could not take screenshot: " + e.getMessage());
-        }
+//        try {
+//            TakesScreenshot ts = (TakesScreenshot) driver;
+//            File source = ts.getScreenshotAs(OutputType.FILE);
+//            // path
+//            File destination = new File("screenshots/before_cart_validation_" + System.currentTimeMillis() + ".png");
+//            org.apache.commons.io.FileUtils.copyFile(source, destination);
+//            System.out.println("Screenshot taken: " + destination.getAbsolutePath());
+//        } catch (Exception e) {
+//            System.out.println("Could not take screenshot: " + e.getMessage());
+//        }
 
         cartPage = new CartPage(driver);
         cartPage.validateOnCartPage();
