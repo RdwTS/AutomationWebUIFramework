@@ -10,7 +10,6 @@ repositories {
 }
 
 dependencies {
-<<<<<<< HEAD
     implementation("io.github.bonigarcia:webdrivermanager:6.1.0") {
         exclude group: 'com.google.guava', module: 'guava'
     }
@@ -56,12 +55,4 @@ task cucumber (){
             ]
         }
     }
-=======
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-}
-
-test {
-    useJUnitPlatform()
->>>>>>> 06247d215dd9647fc7e596631c3b063a586d14de
 }

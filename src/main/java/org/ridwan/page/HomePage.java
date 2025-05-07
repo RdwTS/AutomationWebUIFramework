@@ -1,6 +1,7 @@
 package org.ridwan.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,7 +28,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(35));
     }
 
     public void validateOnHomePage() {
@@ -37,19 +38,27 @@ public class HomePage {
         assertEquals("Sauce Labs Backpack", productElement.getText());
     }
 
+
     public void clickAddToCartBackpack() {
-        WebElement addButton = wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackAddChart));
-//        WebElement addButton = driver.findElement(productBackpackAddChart);
+        WebElement addButton = wait.until(ExpectedConditions.elementToBeClickable(productBackpackAddChart));
+        // Scroll ke elemen untuk memastikan terlihat di layar
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", addButton);
+
         assertTrue(addButton.isDisplayed());
         addButton.click();
     }
 
+
     public void validateRemoveButtonVisible() {
-        WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(productBackpackRemoveChart, "Remove"));
+        WebElement removeButton = driver.findElement(productBackpackRemoveChart);
+//        WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
 //        WebElement removeButton = driver.findElement(productBackpackRemoveChart);
         assertTrue(removeButton.isDisplayed());
         assertEquals("Remove", removeButton.getText());
     }
+
+
 
     public void validateCartCount(int expectedCount) {
         WebElement cartBadge = driver.findElement(imageChart);

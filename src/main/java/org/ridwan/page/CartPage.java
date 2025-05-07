@@ -29,16 +29,9 @@ public class CartPage {
     }
 
     public void validateOnCartPage() {
-        // **PERBAIKAN DI SINI:**
 
-        // 1. Tunggu sampai elemen memiliki teks "Your Cart".
-        //    wait.until() di sini mengembalikan Boolean.
         wait.until(ExpectedConditions.textToBePresentInElementLocated(titlePageCart, "Your Cart"));
-
-        // 2. Setelah yakin teksnya ada (wait.until tidak melempar exception),
-        //    baru temukan elemennya lagi untuk validasi lebih lanjut.
         WebElement textCart = driver.findElement(titlePageCart);
-
 //        WebElement textCart = wait.until(ExpectedConditions.visibilityOfElementLocated(titlePageCart));
 //        WebElement textCart = driver.findElement(titlePageCart);
         assertTrue(textCart.isDisplayed());

@@ -4,8 +4,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.ridwan.BaseTest;
 import org.ridwan.page.HomePage;
+
+import java.io.File;
+
 public class HomeStep extends BaseTest {
 
     HomePage homePage;
@@ -20,11 +25,34 @@ public class HomeStep extends BaseTest {
 
     @When("user clicks {string} button for Backpack")
     public void userClicksButtonFor(String buttonText) {
+
+//        try {
+//            TakesScreenshot ts = (TakesScreenshot) driver;
+//            File source = ts.getScreenshotAs(OutputType.FILE);
+//            // path
+//            File destination = new File("screenshots/userClicksButtonForBackpack" + System.currentTimeMillis() + ".png");
+//            org.apache.commons.io.FileUtils.copyFile(source, destination);
+//            System.out.println("Screenshot taken: " + destination.getAbsolutePath());
+//        } catch (Exception e) {
+//            System.out.println("Could not take screenshot: " + e.getMessage());
+//        }
+
             homePage.clickAddToCartBackpack();
     }
 
     @Then("the button should change to {string}")
     public void theButtonShouldChangeTo(String buttonTextChangeRemove) {
+//        try {
+//            TakesScreenshot ts = (TakesScreenshot) driver;
+//            File source = ts.getScreenshotAs(OutputType.FILE);
+//            // path
+//            File destination = new File("screenshots/theButtonShouldChangeToRemove" + System.currentTimeMillis() + ".png");
+//            org.apache.commons.io.FileUtils.copyFile(source, destination);
+//            System.out.println("Screenshot taken: " + destination.getAbsolutePath());
+//        } catch (Exception e) {
+//            System.out.println("Could not take screenshot: " + e.getMessage());
+//        }
+
             homePage.validateRemoveButtonVisible();
     }
 
