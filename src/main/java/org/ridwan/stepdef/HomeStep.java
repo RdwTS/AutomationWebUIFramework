@@ -24,7 +24,7 @@ public class HomeStep extends BaseTest {
     }
 
     @When("user clicks {string} button for Backpack")
-    public void userClicksButtonFor(String buttonText) {
+    public void userClicksButtonFor(String buttonText) throws InterruptedException {
 
 //        try {
 //            TakesScreenshot ts = (TakesScreenshot) driver;

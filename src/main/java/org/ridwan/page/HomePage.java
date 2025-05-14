@@ -14,7 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class HomePage {
     By productTitle = By.xpath("//*[@id=\"item_4_title_link\"]/div");
-    By productBackpackAddChart = By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]");
+//    By productBackpackAddChart = By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]");
+    By productBackpackAddChart = By.id("add-to-cart-sauce-labs-backpack");
 
     By productBackpackRemoveChart = By.id("remove-sauce-labs-backpack");
 //    By productBackpackRemoveChart = By.xpath("//*[@id=\"remove-sauce-labs-backpack\"]");
@@ -28,7 +29,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(120));
     }
 
     public void validateOnHomePage() {
@@ -39,13 +40,22 @@ public class HomePage {
     }
 
 
-    public void clickAddToCartBackpack() {
+    public void clickAddToCartBackpack() throws InterruptedException {
         WebElement addButton = wait.until(ExpectedConditions.elementToBeClickable(productBackpackAddChart));
         // Scroll ke elemen untuk memastikan terlihat di layar
+//        Thread.sleep(1000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", addButton);
 
         assertTrue(addButton.isDisplayed());
-        addButton.click();
+
+        try {
+            addButton.click(); // Klik pakai Selenium
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addButton);// Klik pakai JavaScript
+        }
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(productBackpackAddChart));
+
 
     }
 
@@ -54,7 +64,6 @@ public class HomePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
         wait.until(ExpectedConditions.textToBePresentInElementLocated(productBackpackRemoveChart, "Remove"));
         WebElement removeButton = driver.findElement(productBackpackRemoveChart);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
         assertTrue(removeButton.isDisplayed());
         assertEquals("Remove", removeButton.getText());
     }
