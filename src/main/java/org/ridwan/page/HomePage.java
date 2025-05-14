@@ -16,8 +16,8 @@ public class HomePage {
     By productTitle = By.xpath("//*[@id=\"item_4_title_link\"]/div");
     By productBackpackAddChart = By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]");
 
-//    By productBackpackRemoveChart = By.id("remove-sauce-labs-backpack");
-    By productBackpackRemoveChart = By.xpath("//*[@id=\"remove-sauce-labs-backpack\"]");
+    By productBackpackRemoveChart = By.id("remove-sauce-labs-backpack");
+//    By productBackpackRemoveChart = By.xpath("//*[@id=\"remove-sauce-labs-backpack\"]");
 
     By imageChart = By.xpath("//*[@id=\"shopping_cart_container\"]/a");
 
@@ -28,7 +28,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(35));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     }
 
     public void validateOnHomePage() {
@@ -46,14 +46,15 @@ public class HomePage {
 
         assertTrue(addButton.isDisplayed());
         addButton.click();
+
     }
 
 
     public void validateRemoveButtonVisible() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
         wait.until(ExpectedConditions.textToBePresentInElementLocated(productBackpackRemoveChart, "Remove"));
         WebElement removeButton = driver.findElement(productBackpackRemoveChart);
-//        WebElement removeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
-//        WebElement removeButton = driver.findElement(productBackpackRemoveChart);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(productBackpackRemoveChart));
         assertTrue(removeButton.isDisplayed());
         assertEquals("Remove", removeButton.getText());
     }

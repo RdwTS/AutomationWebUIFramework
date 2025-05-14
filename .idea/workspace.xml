@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="544df0e4-375a-42b6-985a-850da897f637" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/page/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/page/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/page/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/page/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/HomeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ridwan/stepdef/HomeStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +24,15 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AutomationWebUIFramework" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -79,6 +74,7 @@
   "keyToString": {
     "Cucumber Java.Feature: checkout (1).executor": "Run",
     "Cucumber Java.Feature: checkout.executor": "Run",
+    "Cucumber Java.Scenario: Add Backpack to cart (1).executor": "Run",
     "Cucumber Java.Scenario: Add Backpack to cart.executor": "Run",
     "Cucumber Java.Scenario: User proceeds to checkout.executor": "Run",
     "Gradle.Build AutomationWebUIFramework.executor": "Run",
@@ -88,7 +84,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User proceeds to checkout">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Add Backpack to cart (1)">
     <configuration name="Feature: checkout (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/checkout.feature" />
@@ -116,6 +112,26 @@
       <module name="AutomationWebUIFramework.main" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: checkout" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Add Backpack to cart (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/addCart.feature" />
+      <option name="GLUE" value="org.ridwan.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AutomationWebUIFramework.main" />
+      <option name="NAME_FILTER" value="^Add Backpack to cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add Backpack to cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add Backpack to cart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -169,10 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Add Backpack to cart (1)" />
+        <item itemvalue="Cucumber Java.Feature: checkout" />
         <item itemvalue="Cucumber Java.Scenario: User proceeds to checkout" />
         <item itemvalue="Cucumber Java.Scenario: Add Backpack to cart" />
         <item itemvalue="Cucumber Java.Feature: checkout (1)" />
-        <item itemvalue="Cucumber Java.Feature: checkout" />
       </list>
     </recent_temporary>
   </component>
